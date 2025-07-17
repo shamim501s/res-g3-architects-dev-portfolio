@@ -233,6 +233,23 @@
     filter: grayscale(100%);
 }
 
+/* footer style */
+
+.footer {
+    width: 98%;
+    margin: 20px auto;
+}
+
+.footer-alert {
+    background-color: rgb(245 235 222);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.footer-description {
+    text-align: center;
+}
+
 
 
 @media screen and (max-width: 576px) {

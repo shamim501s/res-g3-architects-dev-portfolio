@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* common-style */
+.disply-flex {
+    display: flex;
+}
+
+.primary-color {
+    color: #df8b2b;
+}
+
+.text-gray {
+    color: #424242;
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.first-btn {
+    background-color: #df8b2b;
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: 1s;
+}
+
+/* button hover style */
+.first-btn:hover {
+    background-color: #86571c;
+}
+
+/* header style */
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* nav style */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-titile {
+    font-size: 3rem;
+}
+
+.nav-link ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+    margin-right: 25px;
+}
+
+.nav-link li a {
+    text-decoration: none;
+}
+
+/* nav hover style */
+.nav-link li a:hover {
+    border-bottom: 1px solid rgb(61, 42, 42);
+}
+
+/* banner style */
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-content button {
+    margin-bottom: 15px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* header style end */
+
+/* main style start */
+
+.team-container {
+    max-width: 1140px;
+    margin: 50px auto;
+    gap: 15px;
+    align-items: center;
+
+}
+
+
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.team-content-title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* feature will enjoy style */
+
+.features {
+    max-width: 1440px;
+    margin: 10px auto;
+}
+
+.features-first-container {
+    gap: 100px;
+
+}
+
+.features-title {
+    font-size: 4rem;
+
+}
+
+.img-btn img {
+    width: 100%;
+}
+
+.img-btn button {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -60px;
+    margin-left: -100px;
+}
+
+.img-btn span {
+    font-size: 2rem;
+}
+
+.features-card {
+    width: 50%;
+    margin-top: -120px;
+}
+
+.features-card-container {
+    background-color: rgb(247 245 243);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+/* some fact style */
+.some-fact-content {
+    width: 50%;
+}
+
+.fact-card {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.fact-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.fact-description {
+    margin-bottom: 40px;
+
+}
+
+.fact-card-itam {
+    width: 130px;
+    height: 170px;
+    border: 1px solid rosybrown;
+    padding: 18px 50px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 36px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* sponsor style */
+
+.sponsors-content {
+    text-align: center;
+    width: 50%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.sponsor-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.sponsor-description {
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+.sponsor-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sponsor-img img {
+    filter: grayscale(100%);
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .team-container,
+    .features-first-container {
+        flex-direction: column;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        margin-top: -20px;
+    }
+
+    .nav-link li {
+        margin-bottom: 6px;
+    }
+
+    .team-container {
+        justify-content: center;
+    }
+
+    .team-img img {
+        width: 100%;
+    }
+
+    .features-card {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img-btn button {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .img-btn span {
+        font-size: 1.25rem;
+    }
+
+    .fact-description {
+        width: 100%;
+    }
+
+
+}
+
+/* medium device  */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .features-first-container {
+        flex-direction: column;
+    }
+
+    .features-card {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .img-btn button {
+        font-size: 2rem;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+}
